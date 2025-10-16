@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script href="js/jogo.js"></script>
+
+    <script>
+        function comprarVida() {
+
+        }
+    </script>
+</head>
+<body>
+    <img class="img_moeda" src="imagens/moeda.png" alt=""> : <span id="moeda"></span>
+    <script>
+        document.getElementById('moeda').innerHTML = localStorage.MoedasTotal;
+    </script>
+    <div id="container_loja">
+        <div class="linha">
+            <img id="banana" src="imagens/vivo.png" alt="">
+            <h3 class="text" >VIDA EXTRA!!</h3>
+            <button type="button" class="btn btn-orange btn-lg" onclick="" value="100"> 100 </button>
+        </div>
+        <br>
+        <div class="linha">
+            <img id="bota" src="imagens/velocidade.png" alt="">
+            <h3 class="text">VELOCIDADE</h3>
+            <button type="button" class="btn btn-orange btn-lg" onclick="" value="50"> 50 </button>
+        </div>
+        <br>
+        <div class="linha">
+            <img id="mds" src="imagens/moeda.png" alt="">
+            <h3 class="text">MOEDAS!!!!</h3>
+            <button type="button" class="btn btn-orange btn-lg" onclick="" value="200"> 200 </button>
+        </div>
+        <br>
+        <div>
+            <button type="button" class="btn btn-orange btn-lg" onclick="window.location.href='inicio.html'">Voltar</button>
+        </div>
+    </div>
+</body>
+</html>
